@@ -8,6 +8,7 @@ from langchain_openai import ChatOpenAI
 # from langchain_ollama import ChatOllama
 from langchain_tavily import TavilySearch
 
+load_dotenv()
 
 llm = ChatOpenAI(model="gpt-5")
 tools = [TavilySearch()]
